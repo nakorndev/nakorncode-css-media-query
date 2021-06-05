@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media screen and max-width min-width? */
+        /* flexbox */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(80, 80, 80);
+        }
+
+        .tempo-high::after, .tempo-low::after {
+            content: '\2103';
+        }
+
+        .week {
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .day {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .day > img {
+            width: 75px;
+            height: 75px;
+        }
+
+        .day-of-week {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        
+        .tempo {
+            margin-top: 0.5em;
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+        .tempo-low {
+            margin-left: 0.5em;
+            color: rgb(175, 175, 175);
+        }
+
+        @media screen and (max-width: 720px) {
+            .week {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .day {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .day > img {
+                width: 60px;
+                height: 60px;
+                order: -1;
+            }
+
+            .day-of-week, .tempo {
+                margin: 0;
+            }
+
+            .day-of-week {
+                margin-left: 0.5em;
+            }
+
+            .tempo {
+                margin-left: 0.5em;
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="week">
+        <div class="day">
+            <span class="day-of-week">Monday</span>
+            <img src="http://via.placeholder.com/75" alt="">
+            <div class="tempo">
+                <span class="tempo-high">38</span>
+                <span class="tempo-low">27</span>
+            </div>
+        </div>
+        <div class="day">
+            <span class="day-of-week">Monday</span>
+            <img src="http://via.placeholder.com/75" alt="">
+            <div class="tempo">
+                <span class="tempo-high">38</span>
+                <span class="tempo-low">27</span>
+            </div>
+        </div>
+        <div class="day">
+            <span class="day-of-week">Monday</span>
+            <img src="http://via.placeholder.com/75" alt="">
+            <div class="tempo">
+                <span class="tempo-high">38</span>
+                <span class="tempo-low">27</span>
+            </div>
+        </div>
+        <div class="day">
+            <span class="day-of-week">Monday</span>
+            <img src="http://via.placeholder.com/75" alt="">
+            <div class="tempo">
+                <span class="tempo-high">38</span>
+                <span class="tempo-low">27</span>
+            </div>
+        </div>
+        <div class="day">
+            <span class="day-of-week">Monday</span>
+            <img src="http://via.placeholder.com/75" alt="">
+            <div class="tempo">
+                <span class="tempo-high">38</span>
+                <span class="tempo-low">27</span>
+            </div>
+        </div>
+        <div class="day">
+            <span class="day-of-week">Monday</span>
+            <img src="http://via.placeholder.com/75" alt="">
+            <div class="tempo">
+                <span class="tempo-high">38</span>
+                <span class="tempo-low">27</span>
+            </div>
+        </div>
+        <div class="day">
+            <span class="day-of-week">Monday</span>
+            <img src="http://via.placeholder.com/75" alt="">
+            <div class="tempo">
+                <span class="tempo-high">38</span>
+                <span class="tempo-low">27</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
